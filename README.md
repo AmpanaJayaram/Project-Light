@@ -2,6 +2,16 @@
 
 Find North Carolina public libraries by ZIP code, current location, city or name, filter by service, and ask a chatbot about them.
 
+LightLibrary covers all 441 public library branches in North Carolina, from Murphy to Manteo. Locations, hours and services come from the IMLS Public Libraries Survey, matched to the NC Library System Branches workbook.
+
+**Features**
+
+- **Search:** by ZIP code, your current location, city or library name, with distance-sorted results and service filters (Wi-Fi, computers, kids, teens, research and more).
+- **Statewide map:** pins for every branch, county outlines, and quick views of the Mountains, Piedmont and Coast regions.
+- **AI assistant:** answers questions about nearby libraries and their services, using only the library data (Claude via the Anthropic API, with a rule-based fallback when no key is set).
+- **FAQ:** searchable, grouped by category, with shareable links to each answer.
+- **Backend API:** a small Node.js server with no framework, serving JSON for libraries, map points, content and chat.
+
 ## Run it
 
 ```bash
