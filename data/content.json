@@ -1,0 +1,187 @@
+{
+  "featuredLibraryIds": [
+    "light-out-0411",
+    "light-out-0163",
+    "light-out-0053"
+  ],
+  "workshops": [
+    {
+      "title": "Digital literacy lab",
+      "category": "Technology",
+      "city": "Charlotte",
+      "date": "2026-11-08",
+      "time": "10:00 AM",
+      "format": "In person",
+      "audience": "Adults",
+      "sample": true
+    },
+    {
+      "title": "Resume and job search session",
+      "category": "Careers",
+      "city": "Raleigh",
+      "date": "2026-11-11",
+      "time": "6:00 PM",
+      "format": "In person",
+      "audience": "Adults",
+      "sample": true
+    },
+    {
+      "title": "Family storytime and craft workshop",
+      "category": "Kids",
+      "city": "Asheville",
+      "date": "2026-11-12",
+      "time": "9:30 AM",
+      "format": "In person",
+      "audience": "Families",
+      "sample": true
+    },
+    {
+      "title": "NC genealogy essentials",
+      "category": "History",
+      "city": "Durham",
+      "date": "2026-11-15",
+      "time": "2:00 PM",
+      "format": "Virtual",
+      "audience": "Adults",
+      "sample": true
+    },
+    {
+      "title": "Health resource information hour",
+      "category": "Health",
+      "city": "Greensboro",
+      "date": "2026-11-17",
+      "time": "11:00 AM",
+      "format": "In person",
+      "audience": "Adults",
+      "sample": true
+    },
+    {
+      "title": "Teen creator lab",
+      "category": "Technology",
+      "city": "Concord",
+      "date": "2026-11-22",
+      "time": "4:00 PM",
+      "format": "In person",
+      "audience": "Teens",
+      "sample": true
+    }
+  ],
+  "digitalResources": [
+    {
+      "title": "NC Digital Library",
+      "category": "Books",
+      "url": "https://ncdigital.overdrive.com/",
+      "description": "Free ebooks and audiobooks with your library card.",
+      "needsCard": true
+    },
+    {
+      "title": "NC LIVE",
+      "category": "Research",
+      "url": "https://www.nclive.org/",
+      "description": "Research databases, magazines, and online learning tools.",
+      "needsCard": true
+    },
+    {
+      "title": "NCpedia",
+      "category": "History",
+      "url": "https://www.ncpedia.org/",
+      "description": "North Carolina history, culture, and local traditions.",
+      "needsCard": false
+    },
+    {
+      "title": "GCFGlobal",
+      "category": "Technology",
+      "url": "https://edu.gcfglobal.org/",
+      "description": "Free digital skills tutorials for beginner learners.",
+      "needsCard": false
+    },
+    {
+      "title": "Khan Academy",
+      "category": "Learning",
+      "url": "https://www.khanacademy.org/",
+      "description": "Academic support, study help, and career skill building.",
+      "needsCard": false
+    },
+    {
+      "title": "Open Library",
+      "category": "Books",
+      "url": "https://openlibrary.org/",
+      "description": "Free public-domain books and accessible reading options.",
+      "needsCard": false
+    }
+  ],
+  "faqs": [
+    {
+      "id": "find-closest",
+      "category": "Finding a library",
+      "q": "How do I find the closest library to me?",
+      "a": "Open Search and enter any NC ZIP code, a city or a library name, or press \"Use my location\". Libraries are ranked by straight-line distance, and the nearest one is highlighted on the map."
+    },
+    {
+      "id": "statewide-map",
+      "category": "Finding a library",
+      "q": "Can I see every library in North Carolina on a map?",
+      "a": "Yes. The Map page shows all branches with county outlines. Filter by service or library system, click a county to list its libraries, or click a pin for address, phone and directions."
+    },
+    {
+      "id": "resource-filters",
+      "category": "Services",
+      "q": "What do the resource filters mean?",
+      "a": "Filters use what each library system reports to the IMLS Public Libraries Survey: public computers, Wi-Fi, research databases, and programs for kids, families, teens and adults. Bookmobiles are tagged for books only."
+    },
+    {
+      "id": "wifi-not-reported",
+      "category": "Services",
+      "q": "Why does a library show \"Wi-Fi (not reported)\"?",
+      "a": "Some library systems left Wi-Fi blank in their IMLS report. That usually means it was not counted, not that Wi-Fi is missing, so these libraries still appear in Wi-Fi searches with this label. Call the branch to confirm."
+    },
+    {
+      "id": "job-help",
+      "category": "Services",
+      "q": "Can I get help with jobs, resumes or the GED?",
+      "a": "Many libraries offer adult programs such as job search help, but the dataset only records that adult programs exist, not their topics. Filter for Adult programs, then check the library website or call. For self-paced help, GCFGlobal has free job and computer skills tutorials."
+    },
+    {
+      "id": "library-card",
+      "category": "Library cards",
+      "q": "How do I get a library card?",
+      "a": "Library cards are issued by each library system, usually free for people who live in its service area. You typically need photo ID and proof of address. Use the \"Library website\" link on any result for that system's exact rules."
+    },
+    {
+      "id": "digital-resources",
+      "category": "Library cards",
+      "q": "What can I use online for free?",
+      "a": "NC Digital Library (ebooks and audiobooks) and NC LIVE (research databases) need a library card. NCpedia, GCFGlobal, Khan Academy and Open Library are free for anyone. All are linked on the home page."
+    },
+    {
+      "id": "workshops",
+      "category": "Programs & events",
+      "q": "Are the workshops on the home page real?",
+      "a": "Not yet. They are sample listings until a library events feed is connected. Each library posts its current calendar on its own website."
+    },
+    {
+      "id": "data-source",
+      "category": "About the data",
+      "q": "Where does the library list come from?",
+      "a": "Branch names, systems, counties and addresses come from the NC Library System Branches workbook (manual check, 9/20/2026). Coordinates, phone numbers, weekly hours and service counts come from IMLS Public Libraries Survey data."
+    },
+    {
+      "id": "approx-location",
+      "category": "About the data",
+      "q": "Why is a location marked \"approximate\"?",
+      "a": "A few branches could not be matched to an exact geocoded record, so they are placed at the center of their ZIP code. Their distances are approximate."
+    },
+    {
+      "id": "wrong-info",
+      "category": "About the data",
+      "q": "I found wrong information. What should I do?",
+      "a": "Hours and services change, so always confirm with the library before visiting. Branch details are updated by re-running the data build from the latest workbook."
+    },
+    {
+      "id": "chatbot-ai",
+      "category": "Using the assistant",
+      "q": "How does the chatbot work?",
+      "a": "The assistant answers with Claude, using the library dataset and these FAQs, and remembers your ZIP code or city during the conversation. If AI is unavailable it falls back to built-in answers. It will tell you when the data does not cover something rather than guess."
+    }
+  ]
+}

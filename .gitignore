@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+.env
+workbook_report.txt
+__pycache__/
+*.log
+.DS_Store
+Thumbs.db

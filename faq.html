@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | LightLibrary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="LightLibrary home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2l3 3h-6z" fill="#fff"/><rect x="9.5" y="5" width="5" height="3" fill="#ffe7a3"/><path d="M9 8h6l1.4 13H7.6z" fill="#fff"/><path d="M8.6 12.5l6.6-2.2.3 2.6-7.2 2.4zM8.1 17.2l7.5-2.5.3 2.6-8.1 2.7z" fill="#B31B1B"/></svg>
+          </span>
+          <span class="brand-text">LightLibrary<small>North Carolina</small></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="search.html">Search</a>
+          <a href="map.html">Map</a>
+          <a class="active" href="faq.html">FAQ</a>
+          <a href="chatbot.html">Chatbot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <section class="page-banner">
+        <div class="page-banner-copy">
+          <span class="kicker">Help center</span>
+          <h1>Frequently asked questions</h1>
+          <p>Library cards, services, the map and where our data comes from.</p>
+        </div>
+      </section>
+
+      <div class="faq-tools">
+        <input id="faqSearch" type="search" placeholder="Search questions, e.g. library card, Wi-Fi, map" aria-label="Search FAQs" />
+        <div class="filter-chips" id="faqCategories" aria-label="FAQ categories"></div>
+      </div>
+      <div class="faq-shell">
+        <div id="faqList" aria-live="polite"></div>
+      </div>
+      <div class="faq-help">
+        <div>
+          <strong>Didn't find your answer?</strong>
+          <p class="muted">Ask the library assistant. It answers from the same library data.</p>
+        </div>
+        <form id="faqAsk" class="faq-ask">
+          <input id="faqAskInput" type="text" placeholder="Type your question" aria-label="Question for the assistant" />
+          <button type="submit" class="button primary">Ask</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-landscape" aria-hidden="true"></div>
+      <div class="footer-body">
+        <div class="container footer-inner">
+          <div>
+            <strong>LightLibrary</strong>
+            <p>Public libraries from Murphy to Manteo.</p>
+            <p class="motto">Esse quam videri <span>· "To be, rather than to seem", North Carolina's state motto</span></p>
+          </div>
+          <nav aria-label="Footer">
+            <a href="search.html">Find a library</a>
+            <a href="map.html">State map</a>
+            <a href="faq.html">FAQ</a>
+            <a href="chatbot.html">Ask the assistant</a>
+          </nav>
+          <p class="footer-credit">Branch list: NC Library System Branches workbook (9/20/2026). Locations, hours and services: IMLS Public Libraries Survey. Map data &copy; OpenStreetMap contributors.</p>
+        </div>
+        <div class="flag-stripe" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

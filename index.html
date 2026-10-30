@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightLibrary | NC Library Gateway</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="LightLibrary home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2l3 3h-6z" fill="#fff"/><rect x="9.5" y="5" width="5" height="3" fill="#ffe7a3"/><path d="M9 8h6l1.4 13H7.6z" fill="#fff"/><path d="M8.6 12.5l6.6-2.2.3 2.6-7.2 2.4zM8.1 17.2l7.5-2.5.3 2.6-8.1 2.7z" fill="#B31B1B"/></svg>
+          </span>
+          <span class="brand-text">LightLibrary<small>North Carolina</small></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="search.html">Search</a>
+          <a href="map.html">Map</a>
+          <a href="faq.html">FAQ</a>
+          <a href="chatbot.html">Chatbot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="kicker">From the mountains to the sea</span>
+              <h1>Information Gateway for Health and Technology</h1>
+              <p>
+                Find the right library near you in North Carolina with the resources, programs, workshops, and digital support that match your needs.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="search.html">Find my library</a>
+                <a class="button secondary" href="chatbot.html">Ask the chatbot</a>
+              </div>
+              <div class="badges">
+                <span class="badge">100 counties</span>
+                <span class="badge">Blue Ridge to Outer Banks</span>
+                <span class="badge">Free digital resources</span>
+              </div>
+            </div>
+
+            <div class="hero-panel">
+              <strong>Quick ZIP lookup</strong>
+              <form class="mini-card" action="search.html" method="get">
+                <label class="muted" for="heroZip">Your NC ZIP code</label>
+                <input id="heroZip" name="zip" type="text" inputmode="numeric" maxlength="5" placeholder="27601" />
+                <button type="submit" class="button primary" style="margin-top:10px;width:100%">Find nearest library</button>
+              </form>
+              <div class="mini-card">
+                <span class="muted">Branches in the directory</span>
+                <strong data-stat="libraryCount">…</strong>
+                <div class="muted">from the NC library systems workbook</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-landscape" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Why LightLibrary works for NC residents</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><strong data-stat="libraryCount">…</strong><span class="muted">library branches</span></div>
+          <div class="stat-card"><strong data-stat="systemCount">…</strong><span class="muted">library systems</span></div>
+          <div class="stat-card"><strong data-stat="countyCount">…</strong><span class="muted">counties covered</span></div>
+          <div class="stat-card"><strong>Free</strong><span class="muted">to search, no account needed</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Explore by region</h2>
+          <a href="map.html" class="muted">Whole state →</a>
+        </div>
+        <div class="region-grid">
+          <a class="region-card mountains" href="map.html?region=mountains">
+            <span class="region-art" aria-hidden="true"></span>
+            <span class="kicker">The west</span>
+            <h3>Mountains</h3>
+            <p>Blue Ridge towns from Murphy to Boone and Asheville.</p>
+            <span class="region-link">View on map →</span>
+          </a>
+          <a class="region-card piedmont" href="map.html?region=piedmont">
+            <span class="region-art" aria-hidden="true"></span>
+            <span class="kicker">The heart</span>
+            <h3>Piedmont</h3>
+            <p>Charlotte, the Triad and the Triangle, plus the small towns between.</p>
+            <span class="region-link">View on map →</span>
+          </a>
+          <a class="region-card coast" href="map.html?region=coast">
+            <span class="region-art" aria-hidden="true"></span>
+            <span class="kicker">The east</span>
+            <h3>Coastal Plain</h3>
+            <p>Farm country, sounds and the Outer Banks out to Manteo.</p>
+            <span class="region-link">View on map →</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Featured libraries</h2>
+          <a href="search.html" class="muted">Open search →</a>
+        </div>
+        <div class="feature-grid" id="featuredLibraries"></div>
+      </section>
+
+      <section class="section" id="nc-map">
+        <div class="section-header">
+          <h2>Libraries across North Carolina</h2>
+          <a href="map.html" class="muted">Open full map →</a>
+        </div>
+        <div class="search-shell">
+          <div class="search-panel" data-state-map="compact"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Local workshops and programs <span class="label-pill">Sample listings</span></h2>
+          <a href="search.html" class="muted">Browse all →</a>
+        </div>
+        <div id="workshopList" class="workshop-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Virtual library reference system</h2>
+          <a href="faq.html" class="muted">See FAQs →</a>
+        </div>
+        <div id="digitalResources" class="resource-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-landscape" aria-hidden="true"></div>
+      <div class="footer-body">
+        <div class="container footer-inner">
+          <div>
+            <strong>LightLibrary</strong>
+            <p>Public libraries from Murphy to Manteo.</p>
+            <p class="motto">Esse quam videri <span>· "To be, rather than to seem", North Carolina's state motto</span></p>
+          </div>
+          <nav aria-label="Footer">
+            <a href="search.html">Find a library</a>
+            <a href="map.html">State map</a>
+            <a href="faq.html">FAQ</a>
+            <a href="chatbot.html">Ask the assistant</a>
+          </nav>
+          <p class="footer-credit">Branch list: NC Library System Branches workbook (9/20/2026). Locations, hours and services: IMLS Public Libraries Survey. Map data &copy; OpenStreetMap contributors.</p>
+        </div>
+        <div class="flag-stripe" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

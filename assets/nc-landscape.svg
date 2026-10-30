@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fa6cf"/>
+      <stop offset="1" stop-color="#5b84b3"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f6a9b"/>
+      <stop offset="1" stop-color="#2c5582"/>
+    </linearGradient>
+    <linearGradient id="hills" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f8a64"/>
+      <stop offset="1" stop-color="#2e5e4e"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fb2df"/>
+      <stop offset="1" stop-color="#3b84b8"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe7a3" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffe7a3" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="spiral" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-32)">
+      <rect width="11" height="22" fill="#1d1d1f"/>
+    </pattern>
+    <clipPath id="tower"><path d="M1074 268 L1080 150 L1094 150 L1100 268 Z"/></clipPath>
+  </defs>
+
+  <!-- Blue Ridge: far range -->
+  <path fill="url(#far)" d="M0 150 L60 112 L110 132 L170 86 L235 124 L300 96 L360 130 L420 110 L480 146 L540 138 L600 168 L600 300 L0 300 Z"/>
+  <!-- Blue Ridge: near range -->
+  <path fill="url(#near)" d="M0 190 L50 160 L105 176 L160 140 L215 170 L270 150 L330 182 L390 166 L450 196 L520 190 L560 210 L560 300 L0 300 Z"/>
+
+  <!-- Piedmont rolling hills -->
+  <path fill="url(#hills)" d="M300 230 C380 196 450 214 520 204 C600 192 660 214 730 206 C800 198 860 214 930 220 L960 232 L960 300 L300 300 Z"/>
+
+  <!-- Longleaf pines -->
+  <g fill="#1f4a3c">
+    <path d="M610 214 l9 -34 l9 34 z M617 214 h4 v10 h-4z"/>
+    <path d="M636 210 l11 -42 l11 42 z M645 210 h4 v12 h-4z"/>
+    <path d="M664 214 l8 -30 l8 30 z M670 214 h4 v10 h-4z"/>
+    <path d="M760 208 l10 -38 l10 38 z M768 208 h4 v12 h-4z"/>
+    <path d="M784 212 l8 -28 l8 28 z M790 212 h4 v10 h-4z"/>
+    <path d="M860 218 l9 -32 l9 32 z M867 218 h4 v10 h-4z"/>
+  </g>
+
+  <!-- Coastal plain + Outer Banks -->
+  <path fill="#e9d8b4" d="M900 240 C960 228 1010 236 1060 244 C1110 252 1160 250 1200 246 L1200 300 L900 300 Z"/>
+  <path fill="url(#sea)" d="M960 262 C1010 254 1060 258 1110 264 C1150 268 1180 266 1200 262 L1200 300 L960 300 Z"/>
+  <path fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"
+        d="M985 276 q12 -6 24 0 t24 0 M1050 284 q12 -6 24 0 t24 0 M1120 276 q12 -6 24 0 t24 0"/>
+
+  <!-- Cape Hatteras lighthouse -->
+  <path fill="url(#beam)" d="M1100 146 L1200 116 L1200 176 Z"/>
+  <path fill="#ffffff" d="M1074 268 L1080 150 L1094 150 L1100 268 Z"/>
+  <rect x="1060" y="140" width="60" height="140" fill="url(#spiral)" clip-path="url(#tower)"/>
+  <rect x="1070" y="264" width="34" height="8" fill="#8a3324"/>
+  <rect x="1077" y="146" width="20" height="6" fill="#1d1d1f"/>
+  <rect x="1080" y="134" width="14" height="12" fill="#ffe7a3"/>
+  <path fill="#1d1d1f" d="M1078 134 L1087 124 L1096 134 Z"/>
+</svg>
